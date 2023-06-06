@@ -1,0 +1,4 @@
+colorama==0.4.6
+prettytable==3.7.0
+python-dotenv==1.0.0
+Requests==2.31.0
