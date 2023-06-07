@@ -6,7 +6,8 @@ import sys
 import datetime
 import csv
 import hashlib
-import argparse
+import argparse 
+from argparse import SUPPRESS
 import re
 from dotenv import load_dotenv
 import time
@@ -363,7 +364,7 @@ ____    ____ .___________.     ______  __    __   _______   ______  __  ___  ___
     print(logo)
     print(Colors.GREEN + "\t\t" + AUTHOR + "  Version: " + VERSION + Colors.ENDC)
     print("\n")
-    parser = argparse.ArgumentParser(description=" A python script to chech hashes, ips, domains and download executables by a hash", add_help=False)
+    parser = argparse.ArgumentParser(description=" A python script to chech hashes, ips, domains and download executables by a hash", usage=SUPPRESS, add_help=False)
     parser.add_argument("-a" , help='executable hash that you want to download ' , metavar='')
     parser.add_argument('-l', help='scan multiple ips, domains, or both.', metavar='')
     parser.add_argument('-s', type= str, help='scan a single ip, domain, or hash', metavar='')
